@@ -68,14 +68,16 @@ const PostLinkRecent = ({ post }) => (
 
 export default () =>
     <Layout>
-        <div class="container-fluid">
+        <div className="container-fluid">
             <div className='row'>
                 <div className="col-md-12">
                     <h2><a href="">Blindtext Blog</a></h2>
                     <p>Ein toller Blog.</p>
                     <hr />
                 </div>
-                <div className="row">
+                
+            </div>
+            <div className="row">
                     <div className="col-md-8" style={{border: '1px solid #DDD'}}>
                         <ul>
                             {myPosts(-1).map((post) => (
@@ -93,7 +95,6 @@ export default () =>
                         </ul>                       
                     </div>
                 </div>
-            </div>
         </div>
     </Layout>
 /* With CSS Modules */
